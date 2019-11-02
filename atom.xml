@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://P1Kaju.github.io/"/>
-  <updated>2019-10-26T08:21:45.771Z</updated>
+  <updated>2019-11-02T07:28:53.900Z</updated>
   <id>https://P1Kaju.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ahache Solr velocity模板命令执行漏洞</title>
+    <link href="https://P1Kaju.github.io/2019/11/01/solr/"/>
+    <id>https://P1Kaju.github.io/2019/11/01/solr/</id>
+    <published>2019-10-31T16:00:00.000Z</published>
+    <updated>2019-11-02T07:28:53.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;影响版本&quot;&gt;&lt;a href=&quot;#影响版本&quot; class=&quot;headerlink&quot; title=&quot;影响版本&quot;&gt;&lt;/a&gt;影响版本&lt;/h4&gt;&lt;p&gt; Apache Solr 5.x &amp;lt;= 8.2.0 &lt;/p&gt;
+&lt;h4 id=&quot;环境搭建&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>渗透测试 APP流量通用抓包方法</title>
@@ -125,7 +152,7 @@
     <link href="https://P1Kaju.github.io/2019/09/14/shiro-rememberme-1.2.4/"/>
     <id>https://P1Kaju.github.io/2019/09/14/shiro-rememberme-1.2.4/</id>
     <published>2019-09-13T16:00:00.000Z</published>
-    <updated>2019-10-26T08:14:13.869Z</updated>
+    <updated>2019-11-02T07:29:25.759Z</updated>
     
     <summary type="html">
     
@@ -133,7 +160,7 @@
       
         
         
-          &lt;h4 id=&quot;影响版本&quot;&gt;&lt;a href=&quot;#影响版本&quot; class=&quot;headerlink&quot; title=&quot;影响版本&quot;&gt;&lt;/a&gt;影响版本&lt;/h4&gt;&lt;p&gt;Apache Shiro &amp;lt;= 1.2.4&lt;/p&gt;
+          &lt;h3 id=&quot;影响版本&quot;&gt;&lt;a href=&quot;#影响版本&quot; class=&quot;headerlink&quot; title=&quot;影响版本&quot;&gt;&lt;/a&gt;影响版本&lt;/h3&gt;&lt;p&gt;Apache Shiro &amp;lt;= 1.2.4&lt;/p&gt;
 &lt;h4 id=&quot;原因分析&quot;&gt;&lt;a href=&quot;#原因分析&quot;
         
       

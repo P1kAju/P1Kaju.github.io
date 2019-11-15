@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://P1Kaju.github.io/"/>
-  <updated>2019-11-02T07:28:53.900Z</updated>
+  <updated>2019-11-15T15:00:55.102Z</updated>
   <id>https://P1Kaju.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ruby on Rails漏洞</title>
+    <link href="https://P1Kaju.github.io/2019/11/15/rubyonrails/"/>
+    <id>https://P1Kaju.github.io/2019/11/15/rubyonrails/</id>
+    <published>2019-11-14T16:00:00.000Z</published>
+    <updated>2019-11-15T15:00:55.102Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby语言以自然、简洁、快速著称，全面支持&lt;a href=&quot;https://zh.wikipedia.org/wiki/面向对象程序设计&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ahache Solr velocity模板命令执行漏洞</title>
     <link href="https://P1Kaju.github.io/2019/11/01/solr/"/>
     <id>https://P1Kaju.github.io/2019/11/01/solr/</id>
     <published>2019-10-31T16:00:00.000Z</published>
-    <updated>2019-11-02T07:28:53.900Z</updated>
+    <updated>2019-11-15T15:00:47.188Z</updated>
     
     <summary type="html">
     
@@ -44,11 +70,37 @@
   </entry>
   
   <entry>
+    <title>ThinkCMFX 漏洞分析集合</title>
+    <link href="https://P1Kaju.github.io/2019/11/01/thinkcmfx/"/>
+    <id>https://P1Kaju.github.io/2019/11/01/thinkcmfx/</id>
+    <published>2019-10-31T16:00:00.000Z</published>
+    <updated>2019-11-15T15:01:42.876Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ThinkCMFX-漏洞分析集合&quot;&gt;&lt;a href=&quot;#ThinkCMFX-漏洞分析集合&quot; class=&quot;headerlink&quot; title=&quot;ThinkCMFX 漏洞分析集合&quot;&gt;&lt;/a&gt;ThinkCMFX
+        
+      
+    
+    </summary>
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+      <category term="漏洞复现" scheme="https://P1Kaju.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>渗透测试 APP流量通用抓包方法</title>
     <link href="https://P1Kaju.github.io/2019/10/26/app-traffic-general-packet-capture-method/"/>
     <id>https://P1Kaju.github.io/2019/10/26/app-traffic-general-packet-capture-method/</id>
     <published>2019-10-25T16:00:00.000Z</published>
-    <updated>2019-10-26T08:21:45.771Z</updated>
+    <updated>2019-11-15T15:03:47.237Z</updated>
     
     <summary type="html">
     
@@ -66,32 +118,6 @@
     
     
       <category term="渗透测试" scheme="https://P1Kaju.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文件解析漏洞总结</title>
-    <link href="https://P1Kaju.github.io/2019/09/15/parsing-vulnerability/"/>
-    <id>https://P1Kaju.github.io/2019/09/15/parsing-vulnerability/</id>
-    <published>2019-09-14T16:00:00.000Z</published>
-    <updated>2019-09-15T13:02:51.925Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Nginx-解析漏洞&quot;&gt;&lt;a href=&quot;#Nginx-解析漏洞&quot; class=&quot;headerlink&quot; title=&quot;Nginx 解析漏洞&quot;&gt;&lt;/a&gt;Nginx 解析漏洞&lt;/h2&gt;&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Web漏洞" scheme="https://P1Kaju.github.io/categories/Web%E6%BC%8F%E6%B4%9E/"/>
-    
-    
-      <category term="Web漏洞" scheme="https://P1Kaju.github.io/tags/Web%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   
@@ -122,11 +148,11 @@
   </entry>
   
   <entry>
-    <title>1039家校通漏洞总结</title>
-    <link href="https://P1Kaju.github.io/2019/09/14/1039/"/>
-    <id>https://P1Kaju.github.io/2019/09/14/1039/</id>
-    <published>2019-09-13T16:00:00.000Z</published>
-    <updated>2019-10-26T08:11:08.404Z</updated>
+    <title>文件解析漏洞总结</title>
+    <link href="https://P1Kaju.github.io/2019/09/15/parsing-vulnerability/"/>
+    <id>https://P1Kaju.github.io/2019/09/15/parsing-vulnerability/</id>
+    <published>2019-09-14T16:00:00.000Z</published>
+    <updated>2019-11-15T15:00:58.552Z</updated>
     
     <summary type="html">
     
@@ -134,7 +160,7 @@
       
         
         
-          &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;​   
+          &lt;h2 id=&quot;Nginx-解析漏洞&quot;&gt;&lt;a href=&quot;#Nginx-解析漏洞&quot; class=&quot;headerlink&quot; title=&quot;Nginx 解析漏洞&quot;&gt;&lt;/a&gt;Nginx 解析漏洞&lt;/h2&gt;&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot;
         
       
     
@@ -171,6 +197,32 @@
     
     
       <category term="漏洞复现" scheme="https://P1Kaju.github.io/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1039家校通漏洞总结</title>
+    <link href="https://P1Kaju.github.io/2019/09/14/1039/"/>
+    <id>https://P1Kaju.github.io/2019/09/14/1039/</id>
+    <published>2019-09-13T16:00:00.000Z</published>
+    <updated>2019-10-26T08:11:08.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Web漏洞" scheme="https://P1Kaju.github.io/categories/Web%E6%BC%8F%E6%B4%9E/"/>
+    
+    
+      <category term="Web漏洞" scheme="https://P1Kaju.github.io/tags/Web%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   

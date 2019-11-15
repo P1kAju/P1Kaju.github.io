@@ -443,18 +443,18 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.ceil(Math.ra
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/9.jpg');">
+            style="background-image: url('/medias/featureimages/20.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">Ahache Solr velocity模板命令执行漏洞</div>
+                    <div class="title center-align">Ruby on Rails漏洞</div>
                     <div class="description center-align">
                     
-                        国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
+                        Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby on Rails几个高危漏洞分析。
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/2019/11/01/solr/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/2019/11/15/rubyonrails/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -614,7 +614,7 @@ $(function () {
 
     
     
-    <div class="col s12 m6" >
+    <div class="col s12" >
         <div class="post-card" style="background-image: url('https://i.loli.net/2019/10/26/WNuODJyGAkSp2lH.jpg')">
             <div class="post-body">
                 <div class="post-categories">
@@ -625,11 +625,7 @@ $(function () {
                 <a href="/2019/10/26/app-traffic-general-packet-capture-method/" target="_blank">
                     <h3 class="post-title">渗透测试 APP流量通用抓包方法</h3>
                 </a>
-                <p class="post-description">
-                    
-                        好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。
-                    
-                </p>
+                <p class="post-description">好久不见，距离上一次水文章已经两个月过去了。 非常抱歉，让大家久等了。</p>
                 <a href="/2019/10/26/app-traffic-general-packet-capture-method/" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
@@ -639,7 +635,28 @@ $(function () {
     </div>
     
     
-    <div class="col s12 m6" >
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        <div class="post-card" style="background-image: url('/medias/featureimages/20.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/漏洞复现/" class="category" target="_blank">漏洞复现</a>
+                    
+                </div>
+                <a href="/2019/11/15/rubyonrails/" target="_blank">
+                    <h3 class="post-title">Ruby on Rails漏洞</h3>
+                </a>
+                <p class="post-description">Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby on Rails几个高危漏洞分析。</p>
+                <a href="/2019/11/15/rubyonrails/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
         <div class="post-card" style="background-image: url('/medias/featureimages/17.jpg')">
             <div class="post-body">
                 <div class="post-categories">
@@ -650,63 +667,9 @@ $(function () {
                 <a href="/2019/09/14/shiro-rememberme-1.2.4/" target="_blank">
                     <h3 class="post-title">Shiro RememberMe 1.2.4 反序列化过程命令执行漏洞</h3>
                 </a>
-                <p class="post-description">
-                    
-                        Apache Shiro默认使用了CookieRememberMeManager，其处理cookie的流程是：得到rememberMe的cookie值 > Base64解码–>AES解密–>反序列化。然而AES的密钥是硬编码的，就导致了攻击者可以构造恶意数据造成反序列化的RCE漏洞。
-                    
-                </p>
+                <p class="post-description">Apache Shiro默认使用了CookieRememberMeManager，其处理cookie的流程是：得到rememberMe的cookie值 > Base64解码–>AES解密–>反序列化。然而AES的密钥是硬编码的，就导致了攻击者可以构造恶意数据造成反序列化的RCE漏洞。</p>
                 <a href="/2019/09/14/shiro-rememberme-1.2.4/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/18.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/Web漏洞/" class="category" target="_blank">Web漏洞</a>
-                    
-                </div>
-                <a href="/2019/09/15/parsing-vulnerability/" target="_blank">
-                    <h3 class="post-title">文件解析漏洞总结</h3>
-                </a>
-                <p class="post-description">
-                    
-                        服务器解析漏洞算是历史比较悠久了，但如今依然广泛存在。在此记录汇总一些常见服务器的解析漏洞，比如IIS6.0、IIS7.5、apache、nginx等方便以后回顾温习。
-                    
-                </p>
-                <a href="/2019/09/15/parsing-vulnerability/" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/9.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/漏洞复现/" class="category" target="_blank">漏洞复现</a>
-                    
-                </div>
-                <a href="/2019/11/01/solr/" target="_blank">
-                    <h3 class="post-title">Ahache Solr velocity模板命令执行漏洞</h3>
-                </a>
-                <p class="post-description">
-                    
-                        国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
-                    
-                </p>
-                <a href="/2019/11/01/solr/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -732,6 +695,53 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2019/11/15/rubyonrails/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Ruby on Rails漏洞">
+                            
+                            <span class="card-title">Ruby on Rails漏洞</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            Ruby on Rails是一种结合Ruby语言与Rails平台的一种网页程序框架，Ruby on Rails几个高危漏洞分析。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-15
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                                    漏洞复现
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/漏洞复现/" target="_blank">
+                            <span class="chip bg-color">漏洞复现</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2019/11/01/solr/" target="_blank">
                         <div class="card-image">
                             
@@ -745,6 +755,53 @@ $(function () {
                         <div class="summary block-with-text">
                             
                             国外安全研究员 s00py 在 Twitter 公开了 Apache Solr Velocity 模版注入远程命令执行的 EXP
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-01
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/漏洞复现/" class="post-category" target="_blank">
+                                    漏洞复现
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/漏洞复现/" target="_blank">
+                            <span class="chip bg-color">漏洞复现</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/11/01/thinkcmfx/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="ThinkCMFX 漏洞分析集合">
+                            
+                            <span class="card-title">ThinkCMFX 漏洞分析集合</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            ThinkCMF 有两个版本 V版本和X版本  ThinkCMF V 基于ThinkPHP3 开发官方已经不再维护。 本文将对 **ThinkCMFX**  2.2.3 进行漏洞总结分析。 **ThinkCMFX2.2.3** 下载地址： https://github.com/thinkcmf/
                             
                         </div>
                         <div class="publish-info">
@@ -824,52 +881,6 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/09/15/parsing-vulnerability/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="文件解析漏洞总结">
-                            
-                            <span class="card-title">文件解析漏洞总结</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            服务器解析漏洞算是历史比较悠久了，但如今依然广泛存在。在此记录汇总一些常见服务器的解析漏洞，比如IIS6.0、IIS7.5、apache、nginx等方便以后回顾温习。
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Web漏洞/" class="post-category" target="_blank">
-                                    Web漏洞
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Web漏洞/" target="_blank">
-                            <span class="chip bg-color">Web漏洞</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2019/09/15/steam/" target="_blank">
                         <div class="card-image">
                             
@@ -916,24 +927,24 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/09/14/1039/" target="_blank">
+                    <a href="/2019/09/15/parsing-vulnerability/" target="_blank">
                         <div class="card-image">
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="1039家校通漏洞总结">
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="文件解析漏洞总结">
                             
-                            <span class="card-title">1039家校通漏洞总结</span>
+                            <span class="card-title">文件解析漏洞总结</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            北京壹零叁玖科技发展有限公司(简称1039公司)是国内第一家专业从事培训行业标准化软件开发和大型应用性平台的高科技企业，是培训行业信息化建设的最佳合作伙伴。
+                            服务器解析漏洞算是历史比较悠久了，但如今依然广泛存在。在此记录汇总一些常见服务器的解析漏洞，比如IIS6.0、IIS7.5、apache、nginx等方便以后回顾温习。
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
                             </span>
                             <span class="publish-author">
                                 
@@ -1007,6 +1018,52 @@ $(function () {
                 </div>
             </div>
             
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/09/14/1039/" target="_blank">
+                        <div class="card-image">
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="1039家校通漏洞总结">
+                            
+                            <span class="card-title">1039家校通漏洞总结</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            北京壹零叁玖科技发展有限公司(简称1039公司)是国内第一家专业从事培训行业标准化软件开发和大型应用性平台的高科技企业，是培训行业信息化建设的最佳合作伙伴。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-14
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Web漏洞/" class="post-category" target="_blank">
+                                    Web漏洞
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Web漏洞/" target="_blank">
+                            <span class="chip bg-color">Web漏洞</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
     </article>
 
@@ -1019,7 +1076,7 @@ $(function () {
             🚀 2019 朋与厌. All Rights Reserved.
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">7k</span>
+            <span class="white-color">11.5k</span>
             
 
             <br>

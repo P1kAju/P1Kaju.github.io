@@ -1,0 +1,639 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.21.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>1039 HomeSchool security research - A-Team@P1Kaju’s blog</title>
+<meta name="description" content="1039家校通网上约车系统是一款驾校一体化系统。">
+
+
+  <meta name="author" content="朋与厌">
+  
+  <meta property="article:author" content="朋与厌">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="A-Team@P1Kaju's blog">
+<meta property="og:title" content="1039 HomeSchool security research">
+<meta property="og:url" content="http://localhost:4000/research/1039-HomeSchool-security-research/">
+
+
+  <meta property="og:description" content="1039家校通网上约车系统是一款驾校一体化系统。">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/site-logo.png">
+
+
+
+  <meta name="twitter:site" content="@uuLnO5PRwH3gm2o">
+  <meta name="twitter:title" content="1039 HomeSchool security research">
+  <meta name="twitter:description" content="1039家校通网上约车系统是一款驾校一体化系统。">
+  <meta name="twitter:url" content="http://localhost:4000/research/1039-HomeSchool-security-research/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/site-logo.png">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@uuLnO5PRwH3gm2o">
+  
+
+
+
+  <meta property="article:published_time" content="2019-09-14T21:00:10+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/research/1039-HomeSchool-security-research/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "朋与厌",
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://twitter.com/uuLnO5PRwH3gm2o"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="A-Team@P1Kaju's blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- baidu site verification  -->
+<meta name="baidu-site-verification" content="rz7dtPQkhU" />
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"> -->
+<link rel="manifest" href="/assets/images/manifest.json">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<!-- <meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png"> -->
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          A-Team@P1Kaju's blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#research" itemprop="item"><span itemprop="name">Research</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">1039 HomeSchool security research</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/profile.png" alt="朋与厌" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">朋与厌</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>分享我偶尔发现的新鲜与乐趣! 🏄</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Between Mac Pro and Chair</span>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:PopXP1Kaju@163.com">
+            <meta itemprop="email" content="PopXP1Kaju@163.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/uuLnO5PRwH3gm2o" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/p1kaju" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.weibo.com/5235137716" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-weibo" aria-hidden="true"></i><span class="label">Weibo</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="1039 HomeSchool security research">
+    <meta itemprop="description" content="1039家校通网上约车系统是一款驾校一体化系统。">
+    <meta itemprop="datePublished" content="2019-09-14T21:00:10+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">1039 HomeSchool security research
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-bars"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#漏洞利用">漏洞利用</a>
+    <ul>
+      <li><a href="#sql注入万能密码">SQL注入万能密码</a></li>
+      <li><a href="#教练点评处存在sql注入">教练点评处存在SQL注入</a></li>
+      <li><a href="#管理员后台增加分类处存在sql注入">管理员后台增加分类处存在SQL注入</a></li>
+      <li><a href="#后台管理编辑器任意文件上传">后台管理编辑器任意文件上传</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>1039家校通网上约车系统是一款驾校一体化系统。</p>
+
+<p>北京壹零叁玖科技发展有限公司(简称1039公司)是国内第一家专业从事培训行业标准化软件开发和大型应用性平台的高科技企业，是培训行业信息化建设的最佳合作伙伴。</p>
+
+<p>Google Hack:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>intitle: 1039家校通
+</code></pre></div></div>
+
+<p><img src="https://i.loli.net/2019/10/26/fDzCsTPXkBGAipO.png" alt="image.png" /></p>
+
+<h2 id="漏洞利用">漏洞利用</h2>
+
+<h3 id="sql注入万能密码">SQL注入万能密码</h3>
+
+<p>影响版本: 家校通v1.0  - v.6.0</p>
+
+<p>登录接口</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/admin/Product/Comstye.aspx
+/Student/StudentLogin.aspx
+/Teacher/Index.aspx
+</code></pre></div></div>
+
+<p><strong>管理员</strong></p>
+
+<p>用户名密码均输入： ‘ or ‘’=’ （都是单引号）可直接进入。</p>
+
+<p><img src="https://i.loli.net/2019/09/01/8gQHWsE7Xihzofn.png" alt="1567317867435.png" /></p>
+
+<p>登陆后可任意修改网站内容</p>
+
+<p><img src="https://i.loli.net/2019/09/01/S8bAOypRX9K2TG1.png" alt="1567318261894.png" /></p>
+
+<h3 id="教练点评处存在sql注入">教练点评处存在SQL注入</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Teacher/TeacherPf.aspx?yid=0030
+</code></pre></div></div>
+
+<p><img src="https://i.loli.net/2019/09/01/W8MS7TAhqfuHXD1.png" alt="1567322657154.png" /></p>
+
+<p><img src="https://i.loli.net/2019/09/01/ldhsSJpK5X7bziy.png" alt="1567328906324.png" /></p>
+
+<h3 id="管理员后台增加分类处存在sql注入">管理员后台增加分类处存在SQL注入</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/admin/Product/comstye2.aspx
+/admin/yk/Index.aspx
+</code></pre></div></div>
+
+<p>配合SQL万能密码进入后台，然后访问：</p>
+
+<p><img src="https://i.loli.net/2019/09/01/oG5yqL6KBlvu42C.png" alt="1567321823408.png" /></p>
+
+<p><img src="https://i.loli.net/2019/09/01/QzeC7uNBLPRF1oh.png" alt="1567321705586.png" /></p>
+
+<h3 id="后台管理编辑器任意文件上传">后台管理编辑器任意文件上传</h3>
+
+<p>上传文件</p>
+
+<p><img src="https://i.loli.net/2019/09/01/aXg3nAxYFQ2EIhr.png" alt="1567329246720.png" /></p>
+
+<p>Burp抓包重放数据 模块，可以看到上传的地址；</p>
+
+<p><img src="https://i.loli.net/2019/09/01/z9qTfBHeNMShjAI.png" alt="1567329315435.png" /></p>
+
+<p>访问路径 就是大马的地址
+<img src="https://i.loli.net/2019/09/01/YxanmheG8trgodQ.png" alt="image.png" /></p>
+
+<p><strong>WOW GETSHELL!</strong>
+<img src="https://i.loli.net/2019/09/01/fbsNvJuHaGD7YwU.png" alt="image.png" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0" class="page__taxonomy-item" rel="tag">漏洞复现</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#research" class="page__taxonomy-item" rel="tag">research</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-09-14T21:00:10+08:00">September 14, 2019</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?via=uuLnO5PRwH3gm2o&text=1039+HomeSchool+security+research%20http%3A%2F%2Flocalhost%3A4000%2Fresearch%2F1039-HomeSchool-security-research%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fresearch%2F1039-HomeSchool-security-research%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fresearch%2F1039-HomeSchool-security-research%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 朋与厌. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/research/1039-HomeSchool-security-research/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/research/1039-HomeSchool-security-research"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://朋与厌.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

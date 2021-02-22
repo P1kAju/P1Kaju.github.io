@@ -15,7 +15,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "A-Team@P1Kaju's blog"
+title                    : "The Loner@P1Kaju's blog"
 title_separator          : "-"
 name                     : &name "朋与厌" # &name is a YAML anchor which can be *referenced later
 description              : &description "分享我偶尔发现的新鲜与乐趣! 🏄"
@@ -46,11 +46,11 @@ staticman:
 # reCaptcha
 # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
 reCaptcha:
-  enabled: 
-  siteKey: 
+  enabled:
+  siteKey:
   # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
   # For more information, https://staticman.net/docs/encryption
-  secret: 
+  secret:
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
@@ -94,7 +94,7 @@ author:
   avatar           : "/assets/images/profile.png"
   bio              : *description
   location         : "Between Mac Pro and Chair"
-  weibo            : "5235137716" 
+  weibo            : "5235137716"
   email            : "PopXP1Kaju@163.com"
   uri              :
   home             :
@@ -102,7 +102,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : 
+  facebook         :
   foursquare       :
   gitlab           :
   google_plus      :
@@ -112,7 +112,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : 
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : *twitter
